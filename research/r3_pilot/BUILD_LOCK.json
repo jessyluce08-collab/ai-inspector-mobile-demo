@@ -35,11 +35,11 @@
   ],
   "pilot_identity": null,
   "pilot_url": null,
-  "analysis_revision_sha256": "6b2e3933dc776ff0301961fe3ce868a63d63a000d4644b5ffad0fb2fef778e0c",
+  "analysis_revision_sha256": "03a2acda7af9d655ee1382af7901cbe563dfcb986dbeb9fbbe66df9a0e101158",
   "source_hashes": {
     "research/r3_pilot/tools/analyze.py": "54723bdfa85053f27eb84c6988c99f753e2982837e3a574326dc07aa8e663884",
     "research/r3_pilot/tools/build_pilot.py": "02e9e87f8d8f49fd5f0a2c885326979fc4759c02f256d041d120d86a9222d22a",
-    "research/r3_pilot/tools/final_release.py": "60a69d7374a64c8b81ebb890dce4faae2020c2efbfd5d7609275e53e0a34fd0b",
+    "research/r3_pilot/tools/final_release.py": "4c7b9328823cdc13ea5c30900252ea6a3c6e34c5cf280c185461d361a21796dd",
     "research/r3_pilot/tools/freeze_lock.py": "f39ea27ae45035d13c14a11724b1aca53ffee8c78ff2bcceed97d0e91e5140e6",
     "research/r3_pilot/tools/make_synthetic_fixtures.py": "8fd3a1b3ffb73389ec76f572a215ff230ab9df43bf39b30ef17421732e613516",
     "research/r3_pilot/tools/post_authorization_smoke.py": "ac7ba87772c1baecee8b942771340b677603aa662ef9be30148694d3e1628db6",
@@ -52,7 +52,7 @@
   "document_hashes": {
     "docs/R3_COLLECTION_SOP.md": "9194a30778c928083b5868318fe769f89e64c2b8b5f7b9a37172cb2e57f50cfd",
     "docs/R3_CONSENT_AND_PRIVACY.md": "6b3802c0edd10f8d3fb215019dfa93532bf808877ee2454134c4efe6bbbff7f0",
-    "docs/R3_FINAL_ACTIVATION.md": "87697b1f5f5b254603de459be6bf8253f6524d78ab00287380b908a8b21c0e87",
+    "docs/R3_FINAL_ACTIVATION.md": "fd79d1b431152d4d66698523a3371f90423524e4ed932ca253ad1acbe398604f",
     "docs/R3_FINAL_VERIFICATION_CHECKLIST.md": "e677e7f4e8e10c053594e6a0adcfe27d8dddf2fa513e8d49dfdef91c6a52a66c",
     "docs/R3_IMPLEMENTATION_INVENTORY.md": "9c23447b18d69956de645edd2efc8c081dfb691415ed9084b75434bcc32dbf04",
     "docs/R3_INVESTIGATOR_FINAL_DECISIONS.md": "160c63d0f2f85759d306369b81af54d5565c7220cf77ab5c63ce37080909db58",

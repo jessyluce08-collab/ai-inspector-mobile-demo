@@ -26,6 +26,7 @@ test_build_does_not_overwrite_frozen_release (test_final02.FinalChecks.test_buil
 test_harness_cannot_enter_pilot_intake (test_final02.FinalChecks.test_harness_cannot_enter_pilot_intake) ... ok
 test_harness_is_memory_only_and_not_authorized (test_final02.FinalChecks.test_harness_is_memory_only_and_not_authorized) ... ok
 test_html_write_is_byte_deterministic (test_final02.FinalChecks.test_html_write_is_byte_deterministic) ... ok
+test_immutable_metadata_cannot_be_overwritten (test_final02.FinalChecks.test_immutable_metadata_cannot_be_overwritten) ... ok
 test_missing_facts_are_not_treated_as_completion (test_final02.FinalChecks.test_missing_facts_are_not_treated_as_completion) ... ok
 test_no_decisions_no_research_html (test_final02.FinalChecks.test_no_decisions_no_research_html) ... ok
 test_no_deployment_without_actual_approval (test_final02.FinalChecks.test_no_deployment_without_actual_approval) ... ok
@@ -34,6 +35,6 @@ test_positive_human_admission_requires_real_decisions (test_final02.FinalChecks.
 test_private_investigator_keys_not_embedded (test_final02.FinalChecks.test_private_investigator_keys_not_embedded) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 2.814s
+Ran 35 tests in 3.612s
 
 OK

@@ -35,6 +35,15 @@ def participant_materials(c,folder,url):
  for name,content in files.items():(folder/name).write_bytes(content.encode('utf-8'))
  return {name:sha(content.encode()) for name,content in files.items()}
 
+def install_immutable(directory,data,identity):
+ directory=Path(directory)
+ encoded=(json.dumps(identity,indent=2)+'\n').encode()
+ if directory.exists():
+  require((directory/'index.html').read_bytes()==data,'Immutable HTML differs')
+  require((directory/'BUILD_IDENTITY.json').read_bytes()==encoded,'Immutable identity/configuration differs')
+  return
+ directory.mkdir();(directory/'index.html').write_bytes(data);(directory/'BUILD_IDENTITY.json').write_bytes(encoded)
+
 def prepare(config_path,base_url,output=None):
  config=json.loads(Path(config_path).read_text());pending=missing(config)
  if pending:return {'status':'PENDING_INVESTIGATOR_DECISIONS','remaining_fields':pending,'research_html_created':False,'human_study_authorization':'NOT_AUTHORIZED'}
@@ -48,10 +57,8 @@ def prepare(config_path,base_url,output=None):
   from post_authorization_smoke import run
   evidence=run(temp/'index.html',identity,config_path)
   require(evidence['status']=='PASS' and evidence['html_sha256']==identity['html_sha256'],'Exact candidate technical workflow did not pass')
-  name='r3-pilot-'+identity['build_id'][:12];directory=output/name
-  if directory.exists():require((directory/'index.html').read_bytes()==(temp/'index.html').read_bytes(),'Immutable release path already contains different bytes')
-  else:directory.mkdir();shutil.copyfile(temp/'index.html',directory/'index.html')
-  (directory/'BUILD_IDENTITY.json').write_text(json.dumps(identity,indent=2)+'\n')
+  name='r3-pilot-'+identity['build_id'][:12]+'-'+identity['authorization_sha256'][:8];directory=output/name
+  install_immutable(directory,(temp/'index.html').read_bytes(),identity)
   url=base_url.rstrip('/')+'/'+name+'/'
   materials=participant_materials(c,output/'participant-materials',url)
   from freeze_lock import freeze

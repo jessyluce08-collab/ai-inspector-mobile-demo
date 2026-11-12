@@ -10,7 +10,7 @@
   "baseline_html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
   "baseline_build": "0d75fc75d3731de8133470048be10c856cf8aebf7301715d9bad2da8b44579fa",
   "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
-  "analysis_revision_sha256": "6b2e3933dc776ff0301961fe3ce868a63d63a000d4644b5ffad0fb2fef778e0c",
+  "analysis_revision_sha256": "03a2acda7af9d655ee1382af7901cbe563dfcb986dbeb9fbbe66df9a0e101158",
   "protocol_sha256": "a87e5cb1e064a5c5e244e0b46ca4b1f865654139bcdf542c68ed3d3616f1bf40",
   "pilot_schema_sha256": "4f40285a4a3ae5a07917b74e556a8854206ced12a99849884bd64eec6c572f6c",
   "technical_preview": {
@@ -38,7 +38,7 @@
     "engineering_harness": true
   },
   "initial_unit_tests": 23,
-  "final_unit_tests": 34,
+  "final_unit_tests": 35,
   "existing_browser_regressions": 6,
   "local_consent_control_workflows": 2,
   "scripted_trial_records": 154,

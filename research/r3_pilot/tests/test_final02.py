@@ -4,12 +4,17 @@ import unittest,tempfile,re,json,copy
 from unittest.mock import patch
 from build_pilot import participant_information,has_actual_value
 from verify_candidate import verify
-from final_release import prepare,check_deployment_approval
+from final_release import prepare,check_deployment_approval,install_immutable
 
 class FinalChecks(unittest.TestCase):
  def test_missing_facts_are_not_treated_as_completion(self):
   for value in [None,'','NON RENSEIGNÉ','[À COMPLÉTER]','TODO','unknown']:
    self.assertFalse(has_actual_value(value))
+ def test_immutable_metadata_cannot_be_overwritten(self):
+  with tempfile.TemporaryDirectory() as t:
+   root=Path(t);source=root/'source/index.html';identity=build(source);data=source.read_bytes();target=root/'immutable';install_immutable(target,data,identity);before=(target/'BUILD_IDENTITY.json').read_bytes();install_immutable(target,data,identity);altered=copy.deepcopy(identity);altered['authorization_sha256']='0'*64
+   with self.assertRaises(ValueError):install_immutable(target,data,altered)
+   self.assertEqual((target/'BUILD_IDENTITY.json').read_bytes(),before)
  def test_no_decisions_no_research_html(self):
   with tempfile.TemporaryDirectory() as t:
    output=Path(t)/'release';result=prepare(P/'INVESTIGATOR_CONFIG.template.json','https://example.invalid/',output);self.assertFalse(result['research_html_created']);self.assertEqual(result['human_study_authorization'],'NOT_AUTHORIZED');self.assertFalse(output.exists());self.assertIn('controller_name',result['remaining_fields'])

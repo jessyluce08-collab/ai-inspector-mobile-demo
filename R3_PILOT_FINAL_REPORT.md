@@ -13,7 +13,7 @@ Original public baseline HTML SHA256 `bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea
 ## Actual corrections, restricted to collection/release machinery
 
 1. **CRITICAL potential private-configuration disclosure, resolved:** prior future builder serialized the entire investigator dictionary. Participant information now uses a seven-field public whitelist; unknown private notes/registers/approval identity are not copied into HTML. Pure sentinel tests use no actual personal information or fake authority. Mandatory missing/placeholder facts are rejected consistently. No real data leak occurred or is claimed.
-2. **CRITICAL future candidate-binding gap, resolved:** prior lock trusted identity JSON without checking the corresponding HTML. Verification now checks actual UTF8 bytes, code/bundle/CSP hashes, all20PNG streams,24definitions/four controls, manifest, complete trial DOM/CSS and unchanged core/geometry prefix. Required authorization binding is not removed by Python optimization. Wrong hashes and altered candidates fail.
+2. **CRITICAL future candidate-binding gap, resolved:** prior lock trusted identity JSON without checking the corresponding HTML. Verification now checks actual UTF8 bytes, code/bundle/CSP hashes, all20PNG streams,24definitions/four controls, manifest, complete trial DOM/CSS and unchanged core/geometry prefix. Required authorization binding is not removed by Python optimization. Wrong hashes and altered candidates fail. Immutable directories bind both HTML and identity/configuration; a repeated command cannot overwrite the identity, and configuration digest is included in the release directory name.
 3. **NONCRITICAL build portability, fixed:** exact UTF8 bytes are written without platform newline translation. An emulated text-write translation test passes; no real Windows execution is claimed.
 4. **ENVIRONMENTAL:** initial sandbox clone could not reach the inherited proxy; the same legitimate clone succeeded in approved execution. No network-policy bypass or new dependency installation.
 5. **Expected refusal:** nonlocal engineering harness execution raises HARNESS_LOCAL_ONLY and displays a French explanation. This is an explicitly tested nondeployability guard, not a participant application error.
@@ -22,7 +22,7 @@ No PNG, blur transformation, source provenance,24trial definition, four-control 
 
 ## Verification actually executed
 
-- All **23original unit tests** passed before modification. Final suite: **34tests passed**, including intake preservation of invalid/partial/duplicate/conflicting records; T/U/missing separation; identical controls without participant-accuracy filtering; source/build/manifest/geometry constraints; no technical/diagnostic/harness promotion; missing factual decisions; protected-file writes; actual-byte binding; no approval/no deployment and no approval/no research HTML.
+- All **23original unit tests** passed before modification. Final suite: **35tests passed**, including intake preservation of invalid/partial/duplicate/conflicting records; T/U/missing separation; identical controls without participant-accuracy filtering; source/build/manifest/geometry constraints; no technical/diagnostic/harness promotion; missing factual decisions; protected-file writes; actual-byte binding; no approval/no deployment and no approval/no research HTML.
 - Existing actual Chromium/mobile-touch and Firefox/desktop workflows passed: original five-trial demo, original24trial baseline and final technical24trial preview in each engine (six cases).
 - A **separate RAM-only localhost engineering harness** completed24trials in each engine (two additional cases). Actual information-before-checkbox order, refusal before entry, PILOT code validation, all four controls,24unique slots, actual result downloads and independent structural validation passed. It never calls or mocks a successful investigator authorization. It always records `research_consent=false`, NOT_AUTHORIZED and ENGINEERING_CONSENT_HARNESS_NOT_HUMAN_DATA. Output-to-file and nonlocal execution are refused. No deployable harness HTML is delivered.
 - Total154scripted technical trial records. Actual raw T/U/missing/flags remain unchanged by validation-only projections. Harness files are refused by all research/technical intake modes; separate diagnostic files remain technical. No original inputs were overwritten. Expected invalid fixture CLI exit2is an audited rejection, not a hidden test failure.
@@ -39,7 +39,7 @@ Actual authorized candidate generation, its post-authorization exact-byte browse
 
 ## Frozen identity and scientific limits
 
-Analysis revision: `6b2e3933dc776ff0301961fe3ce868a63d63a000d4644b5ffad0fb2fef778e0c`.
+Analysis revision: `03a2acda7af9d655ee1382af7901cbe563dfcb986dbeb9fbbe66df9a0e101158`.
 Prospective protocol file SHA256: `a87e5cb1e064a5c5e244e0b46ca4b1f865654139bcdf542c68ed3d3616f1bf40`.
 Pilot schema SHA256: `4f40285a4a3ae5a07917b74e556a8854206ced12a99849884bd64eec6c572f6c`.
 Final tested **technical preview**, not study release: HTML `6aa03a4c0af02dc25eb2daa54bb23012218f6932e30de1625a2c157c83ffb7d8`, build `b5728b49637242d999102bcda272a189f69692e4da77ddd5d36be7015ab19ca9`.
