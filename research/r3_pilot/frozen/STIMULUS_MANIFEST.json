@@ -1,0 +1,995 @@
+{
+  "canonical_size": [
+    384,
+    288
+  ],
+  "conditions": [
+    "IDENTICAL",
+    "MILD",
+    "MODERATE",
+    "STRONG",
+    "NONZERO",
+    "SUBTLE"
+  ],
+  "generation_environment": {
+    "Pillow": "12.3.0",
+    "Python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "generator_version": "R3-GENERATOR-1",
+  "manifest_version": "R3-STIMULI-1",
+  "notes": [
+    "No original is asserted sharp.",
+    "Sigma is an imposed encoded-RGB operator parameter, not a perceptual ground truth or physical PSF.",
+    "No facial/eye/skin quality task.",
+    "These common sample photographs may overlap other benchmarks; no unseen-population claim."
+  ],
+  "pairs": [
+    {
+      "base_flip": false,
+      "condition": "IDENTICAL",
+      "group_id": "S01",
+      "higher_variant": "S01-L0",
+      "identity": true,
+      "lower_variant": "S01-L0",
+      "pair_id": "S01-IDENTICAL",
+      "source_id": "S01"
+    },
+    {
+      "base_flip": false,
+      "condition": "MILD",
+      "group_id": "S01",
+      "higher_variant": "S01-L06",
+      "identity": false,
+      "lower_variant": "S01-L0",
+      "pair_id": "S01-MILD",
+      "source_id": "S01"
+    },
+    {
+      "base_flip": true,
+      "condition": "MODERATE",
+      "group_id": "S01",
+      "higher_variant": "S01-L12",
+      "identity": false,
+      "lower_variant": "S01-L0",
+      "pair_id": "S01-MODERATE",
+      "source_id": "S01"
+    },
+    {
+      "base_flip": false,
+      "condition": "STRONG",
+      "group_id": "S01",
+      "higher_variant": "S01-L24",
+      "identity": false,
+      "lower_variant": "S01-L0",
+      "pair_id": "S01-STRONG",
+      "source_id": "S01"
+    },
+    {
+      "base_flip": true,
+      "condition": "NONZERO",
+      "group_id": "S01",
+      "higher_variant": "S01-L12",
+      "identity": false,
+      "lower_variant": "S01-L06",
+      "pair_id": "S01-NONZERO",
+      "source_id": "S01"
+    },
+    {
+      "base_flip": false,
+      "condition": "SUBTLE",
+      "group_id": "S01",
+      "higher_variant": "S01-L07",
+      "identity": false,
+      "lower_variant": "S01-L06",
+      "pair_id": "S01-SUBTLE",
+      "source_id": "S01"
+    },
+    {
+      "base_flip": true,
+      "condition": "IDENTICAL",
+      "group_id": "S02",
+      "higher_variant": "S02-L0",
+      "identity": true,
+      "lower_variant": "S02-L0",
+      "pair_id": "S02-IDENTICAL",
+      "source_id": "S02"
+    },
+    {
+      "base_flip": true,
+      "condition": "MILD",
+      "group_id": "S02",
+      "higher_variant": "S02-L06",
+      "identity": false,
+      "lower_variant": "S02-L0",
+      "pair_id": "S02-MILD",
+      "source_id": "S02"
+    },
+    {
+      "base_flip": false,
+      "condition": "MODERATE",
+      "group_id": "S02",
+      "higher_variant": "S02-L12",
+      "identity": false,
+      "lower_variant": "S02-L0",
+      "pair_id": "S02-MODERATE",
+      "source_id": "S02"
+    },
+    {
+      "base_flip": true,
+      "condition": "STRONG",
+      "group_id": "S02",
+      "higher_variant": "S02-L24",
+      "identity": false,
+      "lower_variant": "S02-L0",
+      "pair_id": "S02-STRONG",
+      "source_id": "S02"
+    },
+    {
+      "base_flip": false,
+      "condition": "NONZERO",
+      "group_id": "S02",
+      "higher_variant": "S02-L12",
+      "identity": false,
+      "lower_variant": "S02-L06",
+      "pair_id": "S02-NONZERO",
+      "source_id": "S02"
+    },
+    {
+      "base_flip": true,
+      "condition": "SUBTLE",
+      "group_id": "S02",
+      "higher_variant": "S02-L07",
+      "identity": false,
+      "lower_variant": "S02-L06",
+      "pair_id": "S02-SUBTLE",
+      "source_id": "S02"
+    },
+    {
+      "base_flip": false,
+      "condition": "IDENTICAL",
+      "group_id": "S03",
+      "higher_variant": "S03-L0",
+      "identity": true,
+      "lower_variant": "S03-L0",
+      "pair_id": "S03-IDENTICAL",
+      "source_id": "S03"
+    },
+    {
+      "base_flip": false,
+      "condition": "MILD",
+      "group_id": "S03",
+      "higher_variant": "S03-L06",
+      "identity": false,
+      "lower_variant": "S03-L0",
+      "pair_id": "S03-MILD",
+      "source_id": "S03"
+    },
+    {
+      "base_flip": true,
+      "condition": "MODERATE",
+      "group_id": "S03",
+      "higher_variant": "S03-L12",
+      "identity": false,
+      "lower_variant": "S03-L0",
+      "pair_id": "S03-MODERATE",
+      "source_id": "S03"
+    },
+    {
+      "base_flip": false,
+      "condition": "STRONG",
+      "group_id": "S03",
+      "higher_variant": "S03-L24",
+      "identity": false,
+      "lower_variant": "S03-L0",
+      "pair_id": "S03-STRONG",
+      "source_id": "S03"
+    },
+    {
+      "base_flip": true,
+      "condition": "NONZERO",
+      "group_id": "S03",
+      "higher_variant": "S03-L12",
+      "identity": false,
+      "lower_variant": "S03-L06",
+      "pair_id": "S03-NONZERO",
+      "source_id": "S03"
+    },
+    {
+      "base_flip": false,
+      "condition": "SUBTLE",
+      "group_id": "S03",
+      "higher_variant": "S03-L07",
+      "identity": false,
+      "lower_variant": "S03-L06",
+      "pair_id": "S03-SUBTLE",
+      "source_id": "S03"
+    },
+    {
+      "base_flip": true,
+      "condition": "IDENTICAL",
+      "group_id": "S04",
+      "higher_variant": "S04-L0",
+      "identity": true,
+      "lower_variant": "S04-L0",
+      "pair_id": "S04-IDENTICAL",
+      "source_id": "S04"
+    },
+    {
+      "base_flip": true,
+      "condition": "MILD",
+      "group_id": "S04",
+      "higher_variant": "S04-L06",
+      "identity": false,
+      "lower_variant": "S04-L0",
+      "pair_id": "S04-MILD",
+      "source_id": "S04"
+    },
+    {
+      "base_flip": false,
+      "condition": "MODERATE",
+      "group_id": "S04",
+      "higher_variant": "S04-L12",
+      "identity": false,
+      "lower_variant": "S04-L0",
+      "pair_id": "S04-MODERATE",
+      "source_id": "S04"
+    },
+    {
+      "base_flip": true,
+      "condition": "STRONG",
+      "group_id": "S04",
+      "higher_variant": "S04-L24",
+      "identity": false,
+      "lower_variant": "S04-L0",
+      "pair_id": "S04-STRONG",
+      "source_id": "S04"
+    },
+    {
+      "base_flip": false,
+      "condition": "NONZERO",
+      "group_id": "S04",
+      "higher_variant": "S04-L12",
+      "identity": false,
+      "lower_variant": "S04-L06",
+      "pair_id": "S04-NONZERO",
+      "source_id": "S04"
+    },
+    {
+      "base_flip": true,
+      "condition": "SUBTLE",
+      "group_id": "S04",
+      "higher_variant": "S04-L07",
+      "identity": false,
+      "lower_variant": "S04-L06",
+      "pair_id": "S04-SUBTLE",
+      "source_id": "S04"
+    }
+  ],
+  "protocol_version": "R3-PILOT-1",
+  "selection": "Four documented open photographs selected on content/licensing before any human outcomes; convenience panel, not representative.",
+  "source_revision": "e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae",
+  "sources": [
+    {
+      "author_or_dataset_attribution": "Lav Varshney",
+      "content": "Photograph with person/camera, structured and low-texture outdoor areas",
+      "filename": "camera.png",
+      "group_id": "S01",
+      "original_bytes": 139512,
+      "original_dimensions": [
+        512,
+        512
+      ],
+      "original_format": "PNG",
+      "original_mode": "L",
+      "original_sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+      "path": "materials/originals/camera.png",
+      "preparation": {
+        "colour": "8-bit encoded RGB values; no claim of radiometric linearity or explicit ICC-to-linear conversion",
+        "crop_half_open": [
+          0,
+          64,
+          512,
+          448
+        ],
+        "decode": "Pillow convert RGB; no auto contrast/enhancement/orientation",
+        "output_size": [
+          384,
+          288
+        ],
+        "resize": "LANCZOS once before every experimental manipulation",
+        "source_profile_metadata": {}
+      },
+      "retrieved_utc": "2026-11-09T19:48:49.094028+00:00",
+      "rights": {
+        "CC0_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "classification": "DOCUMENTED_REUSE_BASIS",
+        "conditions": "No endorsement; privacy/publicity/trademark rights are not conferred. Attribution retained as good practice.",
+        "evidence_function": "camera",
+        "evidence_url": "https://github.com/scikit-image/scikit-image/blob/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/_fetchers.py",
+        "license": "CC0-1.0",
+        "limitation": "Curator documentation verified; photographer release not independently signed. SpaceX origin Flickr page inaccessible."
+      },
+      "source_id": "S01",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/camera.png"
+    },
+    {
+      "author_or_dataset_attribution": "Rachel Michetti; courtesy Pikolo Espresso Bar",
+      "content": "Cup, wood grain and smooth surfaces",
+      "filename": "coffee.png",
+      "group_id": "S02",
+      "original_bytes": 466706,
+      "original_dimensions": [
+        600,
+        400
+      ],
+      "original_format": "PNG",
+      "original_mode": "RGB",
+      "original_sha256": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7",
+      "path": "materials/originals/coffee.png",
+      "preparation": {
+        "colour": "8-bit encoded RGB values; no claim of radiometric linearity or explicit ICC-to-linear conversion",
+        "crop_half_open": [
+          34,
+          0,
+          566,
+          399
+        ],
+        "decode": "Pillow convert RGB; no auto contrast/enhancement/orientation",
+        "output_size": [
+          384,
+          288
+        ],
+        "resize": "LANCZOS once before every experimental manipulation",
+        "source_profile_metadata": {}
+      },
+      "retrieved_utc": "2026-11-09T19:48:49.443281+00:00",
+      "rights": {
+        "CC0_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "classification": "DOCUMENTED_REUSE_BASIS",
+        "conditions": "No endorsement; privacy/publicity/trademark rights are not conferred. Attribution retained as good practice.",
+        "evidence_function": "coffee",
+        "evidence_url": "https://github.com/scikit-image/scikit-image/blob/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/_fetchers.py",
+        "license": "CC0-1.0",
+        "limitation": "Curator documentation verified; photographer release not independently signed. SpaceX origin Flickr page inaccessible."
+      },
+      "source_id": "S02",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/coffee.png"
+    },
+    {
+      "author_or_dataset_attribution": "Stefan van der Walt",
+      "content": "Animal, fur and mixed edges",
+      "filename": "chelsea.png",
+      "group_id": "S03",
+      "original_bytes": 240512,
+      "original_dimensions": [
+        451,
+        300
+      ],
+      "original_format": "PNG",
+      "original_mode": "RGB",
+      "original_sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "path": "materials/originals/chelsea.png",
+      "preparation": {
+        "colour": "8-bit encoded RGB values; no claim of radiometric linearity or explicit ICC-to-linear conversion",
+        "crop_half_open": [
+          25,
+          0,
+          425,
+          300
+        ],
+        "decode": "Pillow convert RGB; no auto contrast/enhancement/orientation",
+        "output_size": [
+          384,
+          288
+        ],
+        "resize": "LANCZOS once before every experimental manipulation",
+        "source_profile_metadata": {
+          "icc_profile": "b'\\x00\\x00\\x0cHLino\\x02\\x10\\x00\\x00mntrRGB XYZ \\x07\\xce\\x00\\x02\\x00\\t\\x00\\x06\\x001\\x00\\x00acspMSFT\\x00\\x00\\x00\\x00IEC sRGB\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xf6\\xd6\\x00\\x01\\x00\\x00\\x00\\x00\\xd3-HP  \\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\"
+        }
+      },
+      "retrieved_utc": "2026-11-09T19:48:49.851925+00:00",
+      "rights": {
+        "CC0_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "classification": "DOCUMENTED_REUSE_BASIS",
+        "conditions": "No endorsement; privacy/publicity/trademark rights are not conferred. Attribution retained as good practice.",
+        "evidence_function": "chelsea",
+        "evidence_url": "https://github.com/scikit-image/scikit-image/blob/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/_fetchers.py",
+        "license": "CC0-1.0",
+        "limitation": "Curator documentation verified; photographer release not independently signed. SpaceX origin Flickr page inaccessible."
+      },
+      "source_id": "S03",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/chelsea.png"
+    },
+    {
+      "author_or_dataset_attribution": "SpaceX",
+      "content": "Launch structure, smoke and sky",
+      "filename": "rocket.jpg",
+      "group_id": "S04",
+      "original_bytes": 112525,
+      "original_dimensions": [
+        640,
+        427
+      ],
+      "original_format": "JPEG",
+      "original_mode": "RGB",
+      "original_sha256": "c2dd0de7c538df8d111e479619b129464d0269d0ae5fd18ca91d33a7fdfea95c",
+      "path": "materials/originals/rocket.jpg",
+      "preparation": {
+        "colour": "8-bit encoded RGB values; no claim of radiometric linearity or explicit ICC-to-linear conversion",
+        "crop_half_open": [
+          36,
+          0,
+          604,
+          426
+        ],
+        "decode": "Pillow convert RGB; no auto contrast/enhancement/orientation",
+        "output_size": [
+          384,
+          288
+        ],
+        "resize": "LANCZOS once before every experimental manipulation",
+        "source_profile_metadata": {
+          "icc_profile": "b'\\x00\\x00\\x020ADBE\\x02\\x10\\x00\\x00mntrRGB XYZ \\x07\\xcf\\x00\\x06\\x00\\x03\\x00\\x00\\x00\\x00\\x00\\x00acspAPPL\\x00\\x00\\x00\\x00none\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\xf6\\xd6\\x00\\x01\\x00\\x00\\x00\\x00\\xd3-ADBE\\x00\\x00\\x00\\x00\\x00"
+        }
+      },
+      "retrieved_utc": "2026-11-09T19:48:50.227150+00:00",
+      "rights": {
+        "CC0_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "classification": "DOCUMENTED_REUSE_BASIS",
+        "conditions": "No endorsement; privacy/publicity/trademark rights are not conferred. Attribution retained as good practice.",
+        "evidence_function": "rocket",
+        "evidence_url": "https://github.com/scikit-image/scikit-image/blob/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/_fetchers.py",
+        "license": "CC0-1.0",
+        "limitation": "Current Flickr page inaccessible in reader; archival licence documentation checked, private VRT correspondence not accessed. Upstream sample derivative identified by curator documentation, not byte-equal to the larger Commons original.",
+        "supplemental_basis": "Same original Flickr photo16511594820 identified by upstream; Commons file page documents CC0, review3June2016 and VRTticket2015032410033985. Underlying higher-resolution Commons image was not downloaded.",
+        "supplemental_evidence_url": "https://commons.wikimedia.org/w/index.php?title=File:Falcon_9_preparing_to_launch_DSCOVR_(16511594820).jpg&oldid=926163916"
+      },
+      "source_id": "S04",
+      "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/e8a42ba85aaf5fd9322ef9ca51bc21063b22fcae/skimage/data/rocket.jpg"
+    }
+  ],
+  "study_id": "AI-INSPECTOR-R3-OFFLINE-HUMAN-BLUR-STUDY",
+  "variants": [
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 96632,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 0,
+      "mode": "RGB",
+      "operator": "IDENTITY",
+      "path": "materials/stimuli/S01-L0.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "c69d2c805ed59dddbb909ad0f0d8fa5ffcba8a2a2ff136e366a904b5c547eb28",
+      "sigma_canonical_pixels": 0.0,
+      "source_id": "S01",
+      "variant_id": "S01-L0"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 75886,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S01-L06.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "639e01fa95b3a1eedb0c3ac04c9b292c2975f6ea0dd6b6b117f5846c6bffdd36",
+      "sigma_canonical_pixels": 0.6,
+      "source_id": "S01",
+      "variant_id": "S01-L06"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 69936,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S01-L07.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "9913ea87b8dcd70524cc9298a539d678cbec9d48b8c2406766e40aa9c1600ca3",
+      "sigma_canonical_pixels": 0.7,
+      "source_id": "S01",
+      "variant_id": "S01-L07"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 53054,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 5,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S01-L12.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "a852a8c64b7d57942319b12b9e85cf017d02813b3278da439b22e463191a69cf",
+      "sigma_canonical_pixels": 1.2,
+      "source_id": "S01",
+      "variant_id": "S01-L12"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 36880,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 10,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S01-L24.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "eebcc83395656a719a26dd7b15d2edaba56c02ccf4ff793cd6489c4f18ab07d7",
+      "sigma_canonical_pixels": 2.4,
+      "source_id": "S01",
+      "variant_id": "S01-L24"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 203631,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 0,
+      "mode": "RGB",
+      "operator": "IDENTITY",
+      "path": "materials/stimuli/S02-L0.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "7a314950f43ebf3421081ea3b93de93b7174b1b747622e8553b4d691e11a5d78",
+      "sigma_canonical_pixels": 0.0,
+      "source_id": "S02",
+      "variant_id": "S02-L0"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 167089,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S02-L06.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "fdd4acb5f660b09d9a48acfc14127133f6a72dddd88e4f170a7c40a98b6bdb56",
+      "sigma_canonical_pixels": 0.6,
+      "source_id": "S02",
+      "variant_id": "S02-L06"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 156949,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S02-L07.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "75189eb38cc62a7e062e46b1d4e445c512a5a7673b674a66d53e59ea15ee00f0",
+      "sigma_canonical_pixels": 0.7,
+      "source_id": "S02",
+      "variant_id": "S02-L07"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 126415,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 5,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S02-L12.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "e0185ace275fd3a99e7dd08e7538071cffbafa5559bdd168bfc295b2594f0958",
+      "sigma_canonical_pixels": 1.2,
+      "source_id": "S02",
+      "variant_id": "S02-L12"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 97243,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 10,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S02-L24.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "493230aae7af2b92d2bc1eb92ebace4ed574eab0f2fb794f0378703f55e559e6",
+      "sigma_canonical_pixels": 2.4,
+      "source_id": "S02",
+      "variant_id": "S02-L24"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 190489,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 0,
+      "mode": "RGB",
+      "operator": "IDENTITY",
+      "path": "materials/stimuli/S03-L0.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "bb50bf2c90ca36d29f0f67bce720b94d9c7774f7f7f3a44fd22d7c0bcb9ff941",
+      "sigma_canonical_pixels": 0.0,
+      "source_id": "S03",
+      "variant_id": "S03-L0"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 157457,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S03-L06.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "82da5a854eb18a4db4d6edd6f7d063b883362f191f217adc0a2bfd12451e5921",
+      "sigma_canonical_pixels": 0.6,
+      "source_id": "S03",
+      "variant_id": "S03-L06"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 148762,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S03-L07.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "1321c1cad96c3122e6a0c057846e464e9c88843ebf4474f1a3f49aba03416ce3",
+      "sigma_canonical_pixels": 0.7,
+      "source_id": "S03",
+      "variant_id": "S03-L07"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 120480,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 5,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S03-L12.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "4f6fc559bce6b829cd2ee7345d3227fb09d89cdb494776e809ec907972a7b7a3",
+      "sigma_canonical_pixels": 1.2,
+      "source_id": "S03",
+      "variant_id": "S03-L12"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 93604,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 10,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S03-L24.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "c9f8d12a5d590a490f67cc16612b1d135ac8216638f6752d217c1db7915493ae",
+      "sigma_canonical_pixels": 2.4,
+      "source_id": "S03",
+      "variant_id": "S03-L24"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 132047,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 0,
+      "mode": "RGB",
+      "operator": "IDENTITY",
+      "path": "materials/stimuli/S04-L0.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "192c127a1d2f993a097220475a427e24090465d3d7433f552edd2e0f89bd7041",
+      "sigma_canonical_pixels": 0.0,
+      "source_id": "S04",
+      "variant_id": "S04-L0"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 104802,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S04-L06.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "78e783458b32c40cc9ce8430136d250bf3dbea46cba10894ecdf3f5e7f898811",
+      "sigma_canonical_pixels": 0.6,
+      "source_id": "S04",
+      "variant_id": "S04-L06"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 96778,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 3,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S04-L07.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "6f3ef9495e8831a9112b44f22601537542d53117916eff427fa9cf36210cac20",
+      "sigma_canonical_pixels": 0.7,
+      "source_id": "S04",
+      "variant_id": "S04-L07"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 78077,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 5,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S04-L12.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "325bc84899ac6ac82f36e2b5a9eb463dfe1d37a6f575cfc4f7a043b9c0f2b560",
+      "sigma_canonical_pixels": 1.2,
+      "source_id": "S04",
+      "variant_id": "S04-L12"
+    },
+    {
+      "arithmetic": "float64 separable convolution, axes x then y; round-to-nearest-even, clip0..255, uint8",
+      "boundary": "numpy.pad symmetric, half-sample symmetric",
+      "bytes": 61482,
+      "colour": "independent encoded RGB channels, not linear irradiance",
+      "dimensions": [
+        384,
+        288
+      ],
+      "encoding": {
+        "compress_level": 9,
+        "lossy": false,
+        "metadata": "No EXIF/ICC/gamma metadata copied",
+        "optimize": false
+      },
+      "format": "PNG",
+      "kernel": "float64 exp(-x^2/(2sigma^2)), normalized; x=-radius..radius",
+      "kernel_radius": 10,
+      "mode": "RGB",
+      "operator": "SEPARABLE_DISCRETE_GAUSSIAN",
+      "path": "materials/stimuli/S04-L24.png",
+      "resizing_after_blur": "NONE",
+      "sha256": "b3b37a69788a013f07cd6a9d52175f6d556175314688a42d0caa36e93c474906",
+      "sigma_canonical_pixels": 2.4,
+      "source_id": "S04",
+      "variant_id": "S04-L24"
+    }
+  ]
+}

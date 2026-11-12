@@ -1,0 +1,19 @@
+{
+  "status": "DRAFT_NOT_AUTHORIZED",
+  "controller_name": null,
+  "contact_and_withdrawal_channel": null,
+  "data_recipients": null,
+  "secure_storage_description": null,
+  "retention_policy": null,
+  "withdrawal_deadline_and_limits": null,
+  "ethics_and_data_protection_review": null,
+  "approval_of_six_attempts_and_fourteen_days": false,
+  "participant_information_version": "R3-PILOT-INFO-1",
+  "consent_version": "R3-PILOT-CONSENT-1",
+  "protocol_sha256": null,
+  "external_registration_reference": null,
+  "registered_at_utc": null,
+  "owner_authorizes_collection": false,
+  "approved_by": null,
+  "approved_at_utc": null
+}

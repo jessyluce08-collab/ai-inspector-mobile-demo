@@ -1,0 +1,25 @@
+{
+  "data_class": "SYNTHETIC_TEST_FIXTURES_NOT_HUMAN_OBSERVATIONS",
+  "files": [
+    {
+      "filename": "SYNTHETIC_VALID_TECHNICAL.json",
+      "sha256": "60638c328423e7ce20271d7f86f9a9140f314188130dea2b02d8492eb61ae933",
+      "synthetic": true
+    },
+    {
+      "filename": "SYNTHETIC_PARTIAL_TECHNICAL.json",
+      "sha256": "c5aa5ab9acaa494d0d5fa9c03bb757457d4cb937dec587f02f9c433c547a570c",
+      "synthetic": true
+    },
+    {
+      "filename": "SYNTHETIC_INCOMPATIBLE.json",
+      "sha256": "99ad387d8a1883bbb25afff5dbee7980af0e523a2a5b715ea9df79b20dd0974e",
+      "synthetic": true
+    },
+    {
+      "filename": "SYNTHETIC_CORRUPT.json",
+      "sha256": "92e7c02a4f155bd917cf707f810dfd2462470d63db490383d2836e0a61580cbd",
+      "synthetic": true
+    }
+  ]
+}

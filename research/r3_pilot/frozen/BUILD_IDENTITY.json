@@ -1,0 +1,14 @@
+{
+  "study_id": "AI-INSPECTOR-R3-OFFLINE-HUMAN-BLUR-STUDY",
+  "build_id": "0d75fc75d3731de8133470048be10c856cf8aebf7301715d9bad2da8b44579fa",
+  "application_code_sha256": "004c81e93758129f3ae9700c097e27d78d12bb436c70ca1821d0db6272362919",
+  "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+  "data_sha256": "54fa9c0f5ec5001afc61eba0172807a14ec8d15b5c2b5483babc5f9dfd772fb5",
+  "html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+  "html_bytes": 3638539,
+  "max_line_characters": 2987,
+  "collection_authorized": false,
+  "delivery_revision": "R3-GEOMETRY-RELIABILITY-02",
+  "baseline_html_sha256": "c3ca3ee16a8cd985d4114f87fa30f0e536fb37e7d4f7894ec1f182ea42215443",
+  "build_inputs": "delivery-version + unchanged-manifest + app-script + style + welcome-template + unchanged-settings"
+}
