@@ -8,8 +8,8 @@ import analyze as A
 from build_pilot import build,sha
 from playwright.sync_api import sync_playwright
 
-def main(legacy):
- spec=importlib.util.spec_from_file_location('existing_r3_harness',Path(legacy)/'harness.py');h=importlib.util.module_from_spec(spec);spec.loader.exec_module(h);h.E=P/'evidence/browser';h.E.mkdir(parents=True,exist_ok=True);rows=[]
+def main(legacy,evidence_directory=None):
+ spec=importlib.util.spec_from_file_location('existing_r3_harness',Path(legacy)/'harness.py');h=importlib.util.module_from_spec(spec);spec.loader.exec_module(h);evidence=Path(evidence_directory or P/'evidence');h.E=evidence/'browser';h.E.mkdir(parents=True,exist_ok=True);rows=[]
  base=A.load(P/'frozen/BUILD_IDENTITY.json');preview=build(P/'build/technical-preview/index.html')
  with tempfile.TemporaryDirectory() as temp:
   cases=[('existing-five',ROOT/'r3-geometry-reliability-02/index.html',base,False,5),('existing-24',ROOT/'r3-geometry-reliability-02/index.html',base,False,24),('preview-24',P/'build/technical-preview/index.html',preview,False,24)]
@@ -28,7 +28,7 @@ def main(legacy):
      finally:
       if d:d.close()
       if site:site.close()
-      rows.append(row);print(engine,name,row['status'],flush=True);(P/'evidence/BROWSER_SMOKE.json').write_text(json.dumps({'fixture_label':'SYNTHETIC_SOFTWARE_TESTS_NOT_HUMAN_OBSERVATIONS','rows':rows,'real_android':'NOT_RUN','real_ios':'NOT_RUN','geometry_status':'Operationally closed; no new geometry development','public_pages':'NOT_DEPLOYED'},indent=2)+'\n')
+      rows.append(row);print(engine,name,row['status'],flush=True);(evidence/'BROWSER_SMOKE.json').write_text(json.dumps({'fixture_label':'SYNTHETIC_SOFTWARE_TESTS_NOT_HUMAN_OBSERVATIONS','rows':rows,'real_android':'NOT_RUN','real_ios':'NOT_RUN','geometry_status':'Operationally closed; no new geometry development','public_pages':'NOT_DEPLOYED'},indent=2)+'\n')
  return any(x['status']=='FAIL' for x in rows)
 if __name__=='__main__':
- a=argparse.ArgumentParser();a.add_argument('--legacy-test-directory',type=Path,default=Path('/workspace/R3_GEOMETRY_RELIABILITY_02/tests'));x=a.parse_args();sys.exit(main(x.legacy_test_directory))
+ a=argparse.ArgumentParser();a.add_argument('--legacy-test-directory',type=Path,default=Path('/workspace/R3_GEOMETRY_RELIABILITY_02/tests'));a.add_argument('--evidence-directory',type=Path);x=a.parse_args();sys.exit(main(x.legacy_test_directory,x.evidence_directory))

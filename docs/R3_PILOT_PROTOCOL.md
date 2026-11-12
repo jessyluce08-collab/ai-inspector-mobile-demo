@@ -51,3 +51,7 @@ Proposed operational rules requiring investigator approval: close invitations af
 No numeric PASS threshold for feasibility is scientifically justified here. Rates and adverse cases inform the investigator's next decision. Software parser/file-size limits are engineering safeguards, not observer exclusions or scientific thresholds. Investigator may approve different operational limits only prospectively before first enrollment and update/register the locked documents within the single final verification ticket.
 
 Limitations: four-source restricted content, convenience friends/volunteers, uncontrolled devices/viewing, accessible client-side transformation metadata, unknown nonreturn reasons, imperfect consent/identity verification and descriptive precision. No physical calibration, creator intent, universal unwanted-blur label, restoration authority, detector qualification or integration follows. All pre-pilot engineering runs are excluded.
+
+## Final02 operational clarification before enrollment
+
+Codes beginning PILOT-TECH are reserved for technical verification and cannot be admitted as human pilot observations, even after an actual research release is authorized. They must not be assigned to volunteers. This implements the already specified exclusion of engineering runs; it changes no stimulus, ordering, response or perceptual criterion. All launch-dependent decisions remain pending until genuinely supplied.

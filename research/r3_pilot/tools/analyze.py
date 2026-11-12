@@ -53,6 +53,7 @@ def validate(d,identity,pilot=False):
  return checks
 
 def identity_for(d,lock,purpose):
+ if d.get('data_class')=='ENGINEERING_CONSENT_HARNESS_NOT_HUMAN_DATA':raise Invalid('ENGINEERING_HARNESS_NOT_PILOT')
  if purpose=='pilot':
   need(d.get('data_class')=='HUMAN_FEASIBILITY_PILOT','TECHNICAL_OR_UNKNOWN_NOT_PILOT');i=lock.get('pilot_identity');need(i and i.get('collection_authorized') is True,'PILOT_LOCK_NOT_AUTHORIZED');return i,True
  pilot=d.get('data_class')=='HUMAN_FEASIBILITY_PILOT'
@@ -100,11 +101,11 @@ def analyze(paths,lock,purpose='technical',register=None,authorization=None,cata
    i,pilot=identity_for(d,lock,purpose);checks=validate(d,i,pilot);row['warnings']=checks['warnings'];row['participant_id']=d['participant']['pseudonymous_id'];row['session_id']=d['session']['session_id'];row['session_status']=d['session']['status'];row['raw_summary']=summarize(trial_rows(d,row['input_id']))
    need(d['experiment']['mode']=='PILOT24','DEMO_NOT_PILOT_PANEL')
    if purpose=='pilot':
-    p=participants.get(row['participant_id']);need(p and p['eligible'] is True and p['withdrawn'] is False and p['consent_version']=='R3-PILOT-CONSENT-1','CONSENT_ELIGIBILITY_OR_WITHDRAWAL');need(registered<=approved<=date(d['session']['started_utc']) and date(p['consent_documented_at'])<=date(d['session']['started_utc']),'PROSPECTIVE_CONSENT_OR_START_UNVERIFIED')
+    need(not row['participant_id'].startswith('PILOT-TECH'),'TECHNICAL_TEST_CODE_NOT_PILOT');p=participants.get(row['participant_id']);need(p and p['eligible'] is True and p['withdrawn'] is False and p['consent_version']=='R3-PILOT-CONSENT-1','CONSENT_ELIGIBILITY_OR_WITHDRAWAL');need(registered<=approved<=date(d['session']['started_utc']) and date(p['consent_documented_at'])<=date(d['session']['started_utc']),'PROSPECTIVE_CONSENT_OR_START_UNVERIFIED')
    body=copy.deepcopy(d);body.pop('export',None);fingerprint=sha(json.dumps(body,sort_keys=True,separators=(',',':')).encode());candidates.append((row,d,fingerprint));row.update(status='CANDIDATE',reason=None)
   except (Exception,) as ex:
    row['reason']=str(ex) if isinstance(ex,Invalid) else ('INVALID_JSON_OR_RECORD:'+type(ex).__name__)
-   if row.get('participant_id') and row['reason'] in ['DEMO_NOT_PILOT_PANEL','CONSENT_ELIGIBILITY_OR_WITHDRAWAL','PROSPECTIVE_CONSENT_OR_START_UNVERIFIED']:row['status']='EXCLUDED'
+   if row.get('participant_id') and row['reason'] in ['TECHNICAL_TEST_CODE_NOT_PILOT','DEMO_NOT_PILOT_PANEL','CONSENT_ELIGIBILITY_OR_WITHDRAWAL','PROSPECTIVE_CONSENT_OR_START_UNVERIFIED']:row['status']='EXCLUDED'
  # Contradictory files claiming the same session are all quarantined; retries
  # differing only in export metadata retain one deterministic representative.
  sessions={}

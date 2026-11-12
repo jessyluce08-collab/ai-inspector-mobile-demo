@@ -30,3 +30,20 @@ The final lock records exact pilot HTML/build/code, manifest and analysis/doc/sc
 Each admission-register participant entry has participant_id (PILOT- suffix4–18letters/digits/hyphens), eligible (true/false), withdrawn (true/false), consent_version (R3-PILOT-CONSENT-1), consent_documented_at (actual offset-aware ISO timestamp). Entries are pseudonymous. The register root purpose=PILOT_ADMISSION, protocol_version=R3-FEASIBILITY-PROTOCOL-1 and authorization_file_sha256 equals the approved configuration bytes. An empty template permits no pilot admission. Keep the separate enrollment/return count for files never received; exports cannot provide that denominator.
 
 Validation-only projection is internal: after strict pilot schema/build checks, frozen legacy structural checks are reused on an in-memory copy. It does not change raw files, grant consent or reclassify technical data. Pilot intake always refuses technical records first. Display flags are not physical calibration; no detector or statistical inference is performed.
+
+## Final02 authoritative handoff
+
+See `docs/R3_INVESTIGATOR_FINAL_DECISIONS.md` and `docs/R3_FINAL_ACTIVATION.md`. No third general preparation mission is needed. `tools/final_release.py prepare` is the canonical conditional procedure: without actual decisions it produces no research HTML; with genuine complete declarations it verifies the exact candidate and technical workflow before creating the new immutable package/lock. Exact deployment approval and a separate GET/hash verification follow; nothing is automatically published.
+
+`tests/consent_harness_smoke.py` exercises the shared PILOT-code/consent controls in RAM on localhost only. Its separate HARNESS_RESULT_SCHEMA.json requires `research_consent=false`, NOT_AUTHORIZED and an engineering data class; such files are never pilot observations. The harness refuses output-to-file and nonlocal execution. It does not replace, mock or bypass investigator authorization. Real pilot-positive admission remains contingent on actual authority, consent, version compatibility and the external register.
+
+Final verification commands:
+
+```
+python research/r3_pilot/tools/freeze_lock.py
+python -m unittest discover -s research/r3_pilot/tests -p 'test_*.py' -v
+python research/r3_pilot/tests/browser_smoke.py --evidence-directory research/r3_pilot/evidence/final02
+python research/r3_pilot/tests/consent_harness_smoke.py
+```
+
+Browser helpers are reused from the preceding authorized workspace delivery at `/workspace/R3_GEOMETRY_RELIABILITY_02/tests/`; its exact helper hash and engine versions are recorded in evidence. This is an engineering prerequisite, never a participant installation. No new package/framework was installed in Final02. The prior successful Samsung/iOS rendering smoke reports remain accepted; only the changed consent/export controls need the proportionate real-device check described in the handoff.

@@ -1,0 +1,108 @@
+{
+  "fixture_label": "SYNTHETIC_SOFTWARE_TESTS_NOT_HUMAN_OBSERVATIONS",
+  "rows": [
+    {
+      "case": "existing-five",
+      "engine": "chromium",
+      "html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+      "data_origin": "AUTOMATED_SYNTHETIC_INTERACTIONS_NOT_HUMAN_OBSERVATIONS",
+      "real_device": "NOT_RUN",
+      "console_errors": [],
+      "uncaught_errors": [],
+      "requests": [
+        {
+          "url": "https://127.0.0.1:46155/r3-smoke/",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "status": "PASS",
+      "trials": 5,
+      "export_validated": true,
+      "retry_identical_trials": true,
+      "restart": true
+    },
+    {
+      "case": "existing-24",
+      "engine": "chromium",
+      "html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+      "data_origin": "AUTOMATED_SYNTHETIC_INTERACTIONS_NOT_HUMAN_OBSERVATIONS",
+      "real_device": "NOT_RUN",
+      "console_errors": [],
+      "uncaught_errors": [],
+      "requests": [
+        {
+          "url": "https://127.0.0.1:33425/r3-smoke/",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "status": "PASS",
+      "trials": 24,
+      "export_validated": true,
+      "retry_identical_trials": true,
+      "restart": true
+    },
+    {
+      "case": "preview-24",
+      "engine": "chromium",
+      "html_sha256": "6aa03a4c0af02dc25eb2daa54bb23012218f6932e30de1625a2c157c83ffb7d8",
+      "data_origin": "AUTOMATED_SYNTHETIC_INTERACTIONS_NOT_HUMAN_OBSERVATIONS",
+      "real_device": "NOT_RUN",
+      "console_errors": [],
+      "uncaught_errors": [],
+      "requests": [
+        {
+          "url": "https://127.0.0.1:36013/r3-smoke/",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "status": "PASS",
+      "trials": 24,
+      "export_validated": true,
+      "retry_identical_trials": true,
+      "restart": true
+    },
+    {
+      "case": "existing-five",
+      "engine": "firefox",
+      "html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+      "data_origin": "AUTOMATED_SYNTHETIC_INTERACTIONS_NOT_HUMAN_OBSERVATIONS",
+      "real_device": "NOT_RUN",
+      "status": "PASS",
+      "trials": 5,
+      "export_validated": true,
+      "retry_identical_trials": true,
+      "restart": true
+    },
+    {
+      "case": "existing-24",
+      "engine": "firefox",
+      "html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+      "data_origin": "AUTOMATED_SYNTHETIC_INTERACTIONS_NOT_HUMAN_OBSERVATIONS",
+      "real_device": "NOT_RUN",
+      "status": "PASS",
+      "trials": 24,
+      "export_validated": true,
+      "retry_identical_trials": true,
+      "restart": true
+    },
+    {
+      "case": "preview-24",
+      "engine": "firefox",
+      "html_sha256": "6aa03a4c0af02dc25eb2daa54bb23012218f6932e30de1625a2c157c83ffb7d8",
+      "data_origin": "AUTOMATED_SYNTHETIC_INTERACTIONS_NOT_HUMAN_OBSERVATIONS",
+      "real_device": "NOT_RUN",
+      "status": "PASS",
+      "trials": 24,
+      "export_validated": true,
+      "retry_identical_trials": true,
+      "restart": true
+    }
+  ],
+  "real_android": "NOT_RUN",
+  "real_ios": "NOT_RUN",
+  "geometry_status": "Operationally closed; no new geometry development",
+  "public_pages": "NOT_DEPLOYED"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PENDING_INVESTIGATOR_DECISIONS",
+  "remaining_fields": [
+    "controller_name",
+    "contact_and_withdrawal_channel",
+    "data_recipients",
+    "secure_storage_description",
+    "retention_policy",
+    "withdrawal_deadline_and_limits",
+    "ethics_and_data_protection_review",
+    "approved_by",
+    "external_registration_reference",
+    "registered_at_utc",
+    "approved_at_utc",
+    "protocol_sha256",
+    "owner_authorizes_collection",
+    "approval_of_six_attempts_and_fourteen_days",
+    "status"
+  ],
+  "research_html_created": false,
+  "human_study_authorization": "NOT_AUTHORIZED"
+}

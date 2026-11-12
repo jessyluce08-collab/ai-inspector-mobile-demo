@@ -1,0 +1,79 @@
+{
+  "rows": [
+    {
+      "engine": "chromium",
+      "html_sha256": "621f69ac5b37562c0f2b46b684242410d422f91747924908966b8a8a09906ec3",
+      "mode": "MEMORY_ONLY_LOCALHOST_ENGINEERING_HARNESS",
+      "research_authorized": false,
+      "actual_human_consent": false,
+      "application_requests": [
+        {
+          "url": "https://127.0.0.1:43795/consent-harness/",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "console_errors": [],
+      "expected_nondeployable_guard_errors": [
+        "HARNESS_LOCAL_ONLY"
+      ],
+      "nonlocalhost_execution": "REFUSED_EXPECTED_HARNESS_LOCAL_ONLY",
+      "nonlocalhost_probe": "PLAYWRIGHT_IN_MEMORY_ROUTE_NO_EXTERNAL_CONNECTION",
+      "status": "PASS",
+      "trial_slots": 24,
+      "refusal_prevents_entry": true,
+      "information_before_consent": true,
+      "pilot_identifier_control": true,
+      "export_schema": "PASS_HARNESS_ONLY",
+      "pilot_admission": "REFUSED",
+      "refusals": [
+        {
+          "purpose": "technical",
+          "reason": "ENGINEERING_HARNESS_NOT_PILOT"
+        },
+        {
+          "purpose": "synthetic",
+          "reason": "ENGINEERING_HARNESS_NOT_PILOT"
+        },
+        {
+          "purpose": "pilot",
+          "reason": "ENGINEERING_HARNESS_NOT_PILOT"
+        }
+      ],
+      "actual_authorized_release": "NOT_RUN_REAL_AUTHORIZATION_MISSING"
+    },
+    {
+      "engine": "firefox",
+      "html_sha256": "621f69ac5b37562c0f2b46b684242410d422f91747924908966b8a8a09906ec3",
+      "mode": "MEMORY_ONLY_LOCALHOST_ENGINEERING_HARNESS",
+      "research_authorized": false,
+      "actual_human_consent": false,
+      "status": "PASS",
+      "trial_slots": 24,
+      "refusal_prevents_entry": true,
+      "information_before_consent": true,
+      "pilot_identifier_control": true,
+      "export_schema": "PASS_HARNESS_ONLY",
+      "pilot_admission": "REFUSED",
+      "refusals": [
+        {
+          "purpose": "technical",
+          "reason": "ENGINEERING_HARNESS_NOT_PILOT"
+        },
+        {
+          "purpose": "synthetic",
+          "reason": "ENGINEERING_HARNESS_NOT_PILOT"
+        },
+        {
+          "purpose": "pilot",
+          "reason": "ENGINEERING_HARNESS_NOT_PILOT"
+        }
+      ],
+      "actual_authorized_release": "NOT_RUN_REAL_AUTHORIZATION_MISSING"
+    }
+  ],
+  "human_study_authorization": "NOT_AUTHORIZED",
+  "human_observations_collected": false,
+  "activated_html_written_to_disk": false,
+  "genuine_pilot_positive_admission": "PENDING_REAL_AUTHORIZATION_AND_REAL_CONSENT"
+}
