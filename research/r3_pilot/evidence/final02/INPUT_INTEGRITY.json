@@ -1,0 +1,18 @@
+{
+  "pr_head": "b105781044f874119dca6e7d9ae835c61113ba77",
+  "archive_sha256": "678db650115837088143bc15521c7532ed4376e408b7d155e435f196307de213",
+  "archive_crc": "PASS",
+  "baseline_html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+  "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+  "png_streams": 20,
+  "pairs": 24,
+  "identical_controls": 4,
+  "preserved_entrypoints": {
+    "index.html": "6bcd51e7147e2daa6c9d94eee3b251eeb1282674595b3d784d9ad6be6b11794d",
+    "r3-geometry-reliability-02/index.html": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+    "r3-ios-delivery-01-41212170385c/index.html": "c3ca3ee16a8cd985d4114f87fa30f0e536fb37e7d4f7894ec1f182ea42215443"
+  },
+  "required_documents_present": true,
+  "initial_unit_tests_passed": 23,
+  "archive_all_manifest_hashes": "PASS"
+}

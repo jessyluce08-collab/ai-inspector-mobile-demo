@@ -1,0 +1,45 @@
+{
+  "findings": [
+    {
+      "id": "F02-PRIVACY",
+      "severity": "CRITICAL",
+      "scope": "Potential disclosure in future authorized builder, source-confirmed; no actual disclosure or fake authority used",
+      "evidence": "Prior builder embedded entire investigator dictionary including any unrecognized private keys",
+      "resolution": "Participant-facing whitelist only; pure nonauthorization sentinel test passes",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F02-BINDING",
+      "severity": "CRITICAL",
+      "scope": "Candidate integrity at future release lock, source-confirmed; no forged approval used",
+      "evidence": "Prior lock trusted identity JSON without checking corresponding HTML bytes",
+      "resolution": "Actual byte/digest/frozen-input verification before lock; mismatch tests pass; binding check not disabled by python -O",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F02-PORTABILITY",
+      "severity": "NONCRITICAL",
+      "scope": "Builder file encoding/newline portability; no reported device failure",
+      "evidence": "write_text may translate newlines on Windows while identity hashed LF memory bytes",
+      "resolution": "Write exact UTF8 bytes; emulated newline-translation test passes; real Windows build NOT_RUN",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "ENV-PROXY",
+      "severity": "ENVIRONMENTAL",
+      "scope": "Sandbox clone initially could not reach inherited proxy",
+      "resolution": "Same authorized clone succeeded in approved execution context",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "EXPECTED-HOST-GUARD",
+      "severity": "NONCRITICAL_EXPECTED_REFUSAL",
+      "scope": "Nonlocal harness is refused with explicit HARNESS_LOCAL_ONLY",
+      "resolution": "Expected security behavior; not a participant app defect",
+      "status": "EXPECTED"
+    }
+  ],
+  "unresolved_critical_implementation_defects": [],
+  "real_owner_authorization": "NOT_SUPPLIED",
+  "real_pilot_admission_positive_test": "PENDING_GENUINE_AUTHORIZATION_AND_CONSENT"
+}

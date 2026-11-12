@@ -1,0 +1,2 @@
+deviation_id,recorded_utc,author,description,reason,affected_version,outcomes_already_seen,prospective_handling
+FINAL02-01,2026-11-12T13:43:12.161311+00:00,Codex,Reserve PILOT-TECH and isolate nondeployable consent harness,Clarify existing engineering-run exclusion before enrollment,R3-FEASIBILITY-PROTOCOL-1,NO_HUMAN_OUTCOMES,Prospective clarification recorded before launch
