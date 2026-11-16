@@ -1,0 +1,62 @@
+{
+  "release_manifest_version": "R3-PUBLIC-RELEASE-1",
+  "intended_direct_https_url": "https://jessyluce08-collab.github.io/ai-inspector-mobile-demo/r3-pilot-a2c998c6e52f-9e4c4651/",
+  "identity": {
+    "build_id": "a2c998c6e52f5150c3d8fee7004f2659cd93cf73a98ef8b0b5dcb9b856a1bb33",
+    "application_code_sha256": "47e2baffbedb2e0d9a23dcea8b69d6e897ae9934edd03197b7f66eed5e959db2",
+    "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+    "html_sha256": "dcaa7be0705924119cb25a464dcd297e924bea3fcd3804ee8596589fca6c13de",
+    "baseline_html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+    "collection_authorized": true,
+    "schema_version": "R3-PILOT-RESULT-1",
+    "protocol_version": "R3-FEASIBILITY-PROTOCOL-1",
+    "authorization_sha256": "9e4c4651e9bd530510844c526d90796ffe53041953d69a34d68e1e2b39830c26",
+    "engineering_harness": false
+  },
+  "protocol_sha256": "a87e5cb1e064a5c5e244e0b46ca4b1f865654139bcdf542c68ed3d3616f1bf40",
+  "schema_sha256": "4f40285a4a3ae5a07917b74e556a8854206ced12a99849884bd64eec6c572f6c",
+  "analysis_revision_sha256": "4f40992192347fc6f3bd6491f766c132ed55b4686e49bed30786719324f3aa1a",
+  "files": {
+    "BUILD_IDENTITY.json": {
+      "bytes": 701,
+      "sha256": "1729eada3f670ca3c7a82c345d2e930c0ac22350a8dad1a6e88a71956f23a539"
+    },
+    "BUILD_LOCK.json": {
+      "bytes": 6789,
+      "sha256": "66a858fd969548afb16167f531b4a640513afbb23b78f09d12e946f3dea9f686"
+    },
+    "CONSENT_PROCEDURE_FR.md": {
+      "bytes": 4556,
+      "sha256": "6fd85233e29a4147633750ed15cea438b2fc02f77560dac9dfcdb020f5cdec34"
+    },
+    "PARTICIPANT_EXPORT_FR.md": {
+      "bytes": 1440,
+      "sha256": "cc5861c77b286c445f17caf32f0800690f84496974b5e734407d9413dbf00f48"
+    },
+    "PARTICIPANT_INFORMATION_FR.md": {
+      "bytes": 7202,
+      "sha256": "6f3d553171207e08c29a3fea61bba223ca43abcd411deaa0d2cf17ea043314a2"
+    },
+    "PILOT_RESULT_SCHEMA.json": {
+      "bytes": 17890,
+      "sha256": "4f40285a4a3ae5a07917b74e556a8854206ced12a99849884bd64eec6c572f6c"
+    },
+    "R3_PILOT_PROTOCOL.md": {
+      "bytes": 11630,
+      "sha256": "a87e5cb1e064a5c5e244e0b46ca4b1f865654139bcdf542c68ed3d3616f1bf40"
+    },
+    "STIMULUS_MANIFEST.json": {
+      "bytes": 34746,
+      "sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc"
+    },
+    "index.html": {
+      "bytes": 3646502,
+      "sha256": "dcaa7be0705924119cb25a464dcd297e924bea3fcd3804ee8596589fca6c13de"
+    }
+  },
+  "contains_private_configuration": false,
+  "contains_participant_data": false,
+  "state_at_preparation": "CANDIDATE_NOT_PUBLISHED",
+  "deployment_approved_at_preparation": false,
+  "served_bytes_verified_at_preparation": false
+}

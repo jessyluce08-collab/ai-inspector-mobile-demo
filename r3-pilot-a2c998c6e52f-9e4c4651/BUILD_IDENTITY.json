@@ -1,0 +1,12 @@
+{
+  "build_id": "a2c998c6e52f5150c3d8fee7004f2659cd93cf73a98ef8b0b5dcb9b856a1bb33",
+  "application_code_sha256": "47e2baffbedb2e0d9a23dcea8b69d6e897ae9934edd03197b7f66eed5e959db2",
+  "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+  "html_sha256": "dcaa7be0705924119cb25a464dcd297e924bea3fcd3804ee8596589fca6c13de",
+  "baseline_html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+  "collection_authorized": true,
+  "schema_version": "R3-PILOT-RESULT-1",
+  "protocol_version": "R3-FEASIBILITY-PROTOCOL-1",
+  "authorization_sha256": "9e4c4651e9bd530510844c526d90796ffe53041953d69a34d68e1e2b39830c26",
+  "engineering_harness": false
+}
