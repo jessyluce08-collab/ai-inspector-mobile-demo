@@ -1,0 +1,10 @@
+__pycache__/
+build/
+intake/
+reports/
+INVESTIGATOR_CONFIG.completed.json
+ADMISSION_REGISTER.completed.json
+evidence/browser/
+evidence/FIREFOX_DRIVER_LAST_*.log
+evidence/final02/browser/
+evidence/final02/harness-downloads/

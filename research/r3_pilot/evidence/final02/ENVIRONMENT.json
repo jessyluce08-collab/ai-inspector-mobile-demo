@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "firefox": "Mozilla Firefox 140.15.0esr",
+  "packages": {
+    "playwright": "1.62.0",
+    "jsonschema": "4.26.0",
+    "Pillow": "12.3.0",
+    "websockets": "16.0"
+  },
+  "existing_helper_sha256": "653956746329dba4c06a4f1597a9d0638d167e4719a68cd0f3f2c76d3c9c0942",
+  "new_dependencies_installed": false,
+  "real_android": "NOT_RUN",
+  "real_ios": "NOT_RUN"
+}

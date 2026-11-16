@@ -1,0 +1,776 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "R3-PILOT-RESULT-1"
+    },
+    "data_class": {
+      "const": "HUMAN_FEASIBILITY_PILOT"
+    },
+    "experiment": {
+      "type": "object",
+      "properties": {
+        "study_id": {
+          "const": "AI-INSPECTOR-R3-OFFLINE-HUMAN-BLUR-STUDY"
+        },
+        "study_version": {
+          "const": "R3-FEASIBILITY-1"
+        },
+        "protocol_version": {
+          "const": "R3-FEASIBILITY-PROTOCOL-1"
+        },
+        "stimulus_manifest_version": {
+          "const": "R3-STIMULI-1"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "application_build_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "application_code_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "artifact_checksum_location": {
+          "const": "EXTERNAL_RELEASE_MANIFEST"
+        },
+        "mode": {
+          "enum": [
+            "PILOT24",
+            "DEMO_FIVE"
+          ]
+        }
+      },
+      "required": [
+        "study_id",
+        "study_version",
+        "protocol_version",
+        "stimulus_manifest_version",
+        "manifest_sha256",
+        "application_build_id",
+        "application_code_sha256",
+        "artifact_checksum_location",
+        "mode"
+      ],
+      "additionalProperties": false
+    },
+    "participant": {
+      "type": "object",
+      "properties": {
+        "pseudonymous_id": {
+          "type": "string",
+          "pattern": "^PILOT-[A-Z0-9-]{4,18}$"
+        },
+        "technical_acknowledged": {
+          "const": true
+        },
+        "research_consent": {
+          "const": true
+        },
+        "consent_version": {
+          "const": "R3-PILOT-CONSENT-1"
+        },
+        "consent_utc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "pseudonymous_id",
+        "technical_acknowledged",
+        "research_consent",
+        "consent_version",
+        "consent_utc"
+      ],
+      "additionalProperties": false
+    },
+    "session": {
+      "type": "object",
+      "properties": {
+        "session_id": {
+          "type": "string",
+          "pattern": "^S-[0-9a-f]{16}$"
+        },
+        "seed": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$"
+        },
+        "started_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ended_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "completed_utc": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "COMPLETE",
+            "STOPPED",
+            "TECHNICAL_ERROR"
+          ]
+        }
+      },
+      "required": [
+        "session_id",
+        "seed",
+        "started_utc",
+        "ended_utc",
+        "completed_utc",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "device": {
+      "type": "object",
+      "properties": {
+        "browser_family": {
+          "enum": [
+            "Chrome",
+            "Safari",
+            "Firefox",
+            "Edge",
+            "UNKNOWN"
+          ]
+        },
+        "os_family": {
+          "enum": [
+            "Android",
+            "iOS",
+            "Windows",
+            "macOS",
+            "Linux",
+            "UNKNOWN"
+          ]
+        }
+      },
+      "required": [
+        "browser_family",
+        "os_family"
+      ],
+      "additionalProperties": false
+    },
+    "trials": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 24,
+      "items": {
+        "$ref": "#/$defs/trial"
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "properties": {
+        "planned_trial_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "record_slot_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "recorded_trial_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "completed_trial_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missing_response_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "abstention_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tie_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "record_summary_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "digest_scope": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "planned_trial_count",
+        "record_slot_count",
+        "recorded_trial_count",
+        "completed_trial_count",
+        "missing_response_count",
+        "abstention_count",
+        "tie_count",
+        "record_summary_sha256",
+        "digest_scope"
+      ],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "LOCAL_STRUCTURE_CHECKED_PILOT_NOT_QUALIFICATION"
+        },
+        "human_reference_admission": {
+          "const": "PENDING_OFFLINE_ADMISSION"
+        },
+        "study_authorization": {
+          "const": "OWNER_AUTHORIZED_PILOT"
+        }
+      },
+      "required": [
+        "status",
+        "human_reference_admission",
+        "study_authorization"
+      ],
+      "additionalProperties": false
+    },
+    "export": {
+      "type": "object",
+      "properties": {
+        "exported_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "attempt": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "exported_utc",
+        "attempt"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_class",
+    "experiment",
+    "participant",
+    "session",
+    "device",
+    "trials",
+    "integrity",
+    "validation",
+    "export"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ai-inspector:r3:result:1",
+  "$defs": {
+    "geometry": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "const": "SEQUENTIAL_FIXED_IMAGE"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "const": 384
+            },
+            "height": {
+              "const": 288
+            }
+          },
+          "required": [
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "css": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "dpr": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "visual_scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "viewport": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "height": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "layout_viewport": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "height": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "width",
+                "height"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "visual_viewport": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "height": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "offsetTop": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "offsetLeft": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "width",
+                "height",
+                "offsetTop",
+                "offsetLeft"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "orientation": {
+          "enum": [
+            "portrait",
+            "landscape"
+          ]
+        },
+        "estimated_render_pixels": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "height": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "width",
+                "height"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sampling": {
+          "enum": [
+            "UNKNOWN",
+            "EXPECTED_DOWNSAMPLING",
+            "EXPECTED_UPSAMPLING",
+            "ESTIMATED_1_TO_1_NOT_VERIFIED"
+          ]
+        },
+        "physical_pixel_pitch": {
+          "const": "UNKNOWN"
+        },
+        "native_display_verified": {
+          "const": false
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "DISPLAY_GEOMETRY_DOCUMENTED",
+              "DOWNSAMPLING_EXPECTED",
+              "DISPLAY_GEOMETRY_UNCERTAIN",
+              "INSUFFICIENT_REGION_SUPPORT",
+              "UNSUPPORTED_LAYOUT"
+            ]
+          },
+          "uniqueItems": true,
+          "maxItems": 5
+        },
+        "support_rule": {
+          "const": "R3-WHOLE-IMAGE-HEURISTIC-1"
+        },
+        "status": {
+          "enum": [
+            "DISPLAY_GEOMETRY_DOCUMENTED",
+            "DOWNSAMPLING_EXPECTED",
+            "DISPLAY_GEOMETRY_UNCERTAIN",
+            "INSUFFICIENT_REGION_SUPPORT",
+            "UNSUPPORTED_LAYOUT"
+          ]
+        }
+      },
+      "required": [
+        "mode",
+        "source",
+        "css",
+        "dpr",
+        "visual_scale",
+        "viewport",
+        "layout_viewport",
+        "visual_viewport",
+        "orientation",
+        "estimated_render_pixels",
+        "sampling",
+        "physical_pixel_pitch",
+        "native_display_verified",
+        "flags",
+        "support_rule",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "trial": {
+      "type": "object",
+      "properties": {
+        "trial_id": {
+          "type": "string",
+          "pattern": "^TR-[0-9]{2}$"
+        },
+        "pair_id": {
+          "type": "string"
+        },
+        "order_index": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 24
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_group_id": {
+          "type": "string"
+        },
+        "variant_a": {
+          "type": "string"
+        },
+        "variant_b": {
+          "type": "string"
+        },
+        "manifest_reference": {
+          "type": "string"
+        },
+        "attempted": {
+          "type": "boolean"
+        },
+        "completed": {
+          "type": "boolean"
+        },
+        "response": {
+          "enum": [
+            "A",
+            "B",
+            "T",
+            "U",
+            null
+          ]
+        },
+        "missing_response": {
+          "type": "boolean"
+        },
+        "abstained": {
+          "type": "boolean"
+        },
+        "response_utc": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "elapsed_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timing_status": {
+          "enum": [
+            "NOT_STARTED",
+            "UNAVAILABLE",
+            "MONOTONIC",
+            "MONOTONIC_INCLUDES_INTERRUPTION"
+          ]
+        },
+        "inspection": {
+          "type": "object",
+          "properties": {
+            "A": {
+              "type": "boolean"
+            },
+            "B": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "A",
+            "B"
+          ],
+          "additionalProperties": false
+        },
+        "display_geometry": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/geometry"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "display_warnings": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "DISPLAY_GEOMETRY_DOCUMENTED",
+              "DOWNSAMPLING_EXPECTED",
+              "DISPLAY_GEOMETRY_UNCERTAIN",
+              "INSUFFICIENT_REGION_SUPPORT",
+              "UNSUPPORTED_LAYOUT"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "technical_invalidation": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "VISIBILITY_INTERRUPTED",
+              "ASSET_MISSING",
+              "ASSET_HASH",
+              "ASSET_DECODE",
+              "ASSET_SIZE",
+              "ASSET_TIMEOUT",
+              "GEOMETRY_ERROR",
+              "EXPORT_INVALID",
+              "UNKNOWN"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "visibility_interrupted": {
+          "type": "boolean"
+        },
+        "geometry_events": {
+          "type": "array",
+          "maxItems": 16,
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "PRESENTATION_CHANGED",
+                  "VIEWPORT_METADATA_CHANGED"
+                ]
+              },
+              "geometry": {
+                "$ref": "#/$defs/geometry"
+              }
+            },
+            "required": [
+              "kind",
+              "geometry"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "trial_id",
+        "pair_id",
+        "order_index",
+        "source_id",
+        "source_group_id",
+        "variant_a",
+        "variant_b",
+        "manifest_reference",
+        "attempted",
+        "completed",
+        "response",
+        "missing_response",
+        "abstained",
+        "response_utc",
+        "elapsed_ms",
+        "timing_status",
+        "inspection",
+        "display_geometry",
+        "display_warnings",
+        "technical_invalidation",
+        "visibility_interrupted",
+        "geometry_events"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "title": "R3 technical-validation export; NOT an admitted human-study result"
+}

@@ -1,0 +1,28 @@
+test_incomplete_authorization_refused (test_analysis.TestBuilder.test_incomplete_authorization_refused) ... ok
+test_preview_invariance_and_no_authority (test_analysis.TestBuilder.test_preview_invariance_and_no_authority) ... ok
+test_U_with_unknown_geometry_retained (test_analysis.TestIntake.test_U_with_unknown_geometry_retained) ... ok
+test_complete (test_analysis.TestIntake.test_complete) ... ok
+test_corrupt_and_incompatible_retained (test_analysis.TestIntake.test_corrupt_and_incompatible_retained) ... ok
+test_diagnostic_not_response (test_analysis.TestIntake.test_diagnostic_not_response) ... ok
+test_exact_duplicate (test_analysis.TestIntake.test_exact_duplicate) ... ok
+test_export_retry (test_analysis.TestIntake.test_export_retry) ... ok
+test_flagged_responses_not_lost (test_analysis.TestIntake.test_flagged_responses_not_lost) ... ok
+test_identical_not_accuracy_filter (test_analysis.TestIntake.test_identical_not_accuracy_filter) ... ok
+test_missing_not_transformed_to_U_or_T (test_analysis.TestIntake.test_missing_not_transformed_to_U_or_T) ... ok
+test_no_promotion_of_technical (test_analysis.TestIntake.test_no_promotion_of_technical) ... ok
+test_nonfinite_and_duplicate_keys (test_analysis.TestIntake.test_nonfinite_and_duplicate_keys) ... ok
+test_order_and_digest_corruption (test_analysis.TestIntake.test_order_and_digest_corruption) ... ok
+test_output_cannot_overwrite_original (test_analysis.TestIntake.test_output_cannot_overwrite_original) ... ok
+test_partial (test_analysis.TestIntake.test_partial) ... ok
+test_protocol_lock_detects_tampering (test_analysis.TestIntake.test_protocol_lock_detects_tampering) ... ok
+test_repeated_participant (test_analysis.TestIntake.test_repeated_participant) ... ok
+test_reproducible_summaries_and_raw_immutability (test_analysis.TestIntake.test_reproducible_summaries_and_raw_immutability) ... ok
+test_session_conflict (test_analysis.TestIntake.test_session_conflict) ... ok
+test_synthetic_catalog_required (test_analysis.TestIntake.test_synthetic_catalog_required) ... ok
+test_unknown_properties_rejected (test_analysis.TestIntake.test_unknown_properties_rejected) ... ok
+test_unsupported_geometry_AB_rejected (test_analysis.TestIntake.test_unsupported_geometry_AB_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.013s
+
+OK

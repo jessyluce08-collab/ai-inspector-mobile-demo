@@ -1,0 +1,11 @@
+{
+  "status": "PASS_FROZEN_SCIENTIFIC_INPUTS",
+  "html_sha256": "6aa03a4c0af02dc25eb2daa54bb23012218f6932e30de1625a2c157c83ffb7d8",
+  "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+  "png_streams": 20,
+  "trials": 24,
+  "identical_controls": 4,
+  "trial_dom_css_core_geometry_identical": true,
+  "physical_display_validation": false,
+  "authorization": "NOT_ESTABLISHED_BY_THIS_CHECK"
+}

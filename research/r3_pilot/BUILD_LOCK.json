@@ -1,0 +1,74 @@
+{
+  "lock_version": "R3-PILOT-LOCK-1",
+  "status": "DRAFT_PREPARATION_NOT_AUTHORIZED",
+  "upstream_commit": "8168e3de292b3c284834fb61956b8ac2a57d0a2a",
+  "current_candidate_path": "r3-geometry-reliability-02/index.html",
+  "current_candidate_html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+  "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+  "technical_identities": [
+    {
+      "study_id": "AI-INSPECTOR-R3-OFFLINE-HUMAN-BLUR-STUDY",
+      "build_id": "0d75fc75d3731de8133470048be10c856cf8aebf7301715d9bad2da8b44579fa",
+      "application_code_sha256": "004c81e93758129f3ae9700c097e27d78d12bb436c70ca1821d0db6272362919",
+      "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+      "data_sha256": "54fa9c0f5ec5001afc61eba0172807a14ec8d15b5c2b5483babc5f9dfd772fb5",
+      "html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+      "html_bytes": 3638539,
+      "max_line_characters": 2987,
+      "collection_authorized": false,
+      "delivery_revision": "R3-GEOMETRY-RELIABILITY-02",
+      "baseline_html_sha256": "c3ca3ee16a8cd985d4114f87fa30f0e536fb37e7d4f7894ec1f182ea42215443",
+      "build_inputs": "delivery-version + unchanged-manifest + app-script + style + welcome-template + unchanged-settings"
+    },
+    {
+      "build_id": "b5728b49637242d999102bcda272a189f69692e4da77ddd5d36be7015ab19ca9",
+      "application_code_sha256": "5dab6c33a96882e371f14872165442a955e739607cab51364d5c1b038a064442",
+      "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+      "html_sha256": "6aa03a4c0af02dc25eb2daa54bb23012218f6932e30de1625a2c157c83ffb7d8",
+      "baseline_html_sha256": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+      "collection_authorized": false,
+      "schema_version": "R3-RESULT-1",
+      "protocol_version": "R3-PILOT-1",
+      "authorization_sha256": null,
+      "engineering_harness": false
+    }
+  ],
+  "pilot_identity": null,
+  "pilot_url": null,
+  "analysis_revision_sha256": "03a2acda7af9d655ee1382af7901cbe563dfcb986dbeb9fbbe66df9a0e101158",
+  "source_hashes": {
+    "research/r3_pilot/tools/analyze.py": "54723bdfa85053f27eb84c6988c99f753e2982837e3a574326dc07aa8e663884",
+    "research/r3_pilot/tools/build_pilot.py": "02e9e87f8d8f49fd5f0a2c885326979fc4759c02f256d041d120d86a9222d22a",
+    "research/r3_pilot/tools/final_release.py": "4c7b9328823cdc13ea5c30900252ea6a3c6e34c5cf280c185461d361a21796dd",
+    "research/r3_pilot/tools/freeze_lock.py": "f39ea27ae45035d13c14a11724b1aca53ffee8c78ff2bcceed97d0e91e5140e6",
+    "research/r3_pilot/tools/make_synthetic_fixtures.py": "8fd3a1b3ffb73389ec76f572a215ff230ab9df43bf39b30ef17421732e613516",
+    "research/r3_pilot/tools/post_authorization_smoke.py": "ac7ba87772c1baecee8b942771340b677603aa662ef9be30148694d3e1628db6",
+    "research/r3_pilot/tools/verify_candidate.py": "df481f8f3a907df0f64d32d1cd2336af911f72e6143e2f2d5e63b94e31ee2d99",
+    "research/r3_pilot/PILOT_RESULT_SCHEMA.json": "4f40285a4a3ae5a07917b74e556a8854206ced12a99849884bd64eec6c572f6c",
+    "research/r3_pilot/HARNESS_RESULT_SCHEMA.json": "06a65d06a7a522cfab4b5abc26b2b2e2225aca7368bd6ad4769d306f65cdc141",
+    "research/r3_pilot/frozen/validate_results.py": "fcfe9698b514289d39e0d5269725636335d90a76f2f801e7b94ae6f73d213ead",
+    "research/r3_pilot/frozen/RESULT_SCHEMA.json": "3db7583a31b882bd0c7cff3e1e426f6a0d2a45a611ed30e2d36dad14cbc0598d"
+  },
+  "document_hashes": {
+    "docs/R3_COLLECTION_SOP.md": "9194a30778c928083b5868318fe769f89e64c2b8b5f7b9a37172cb2e57f50cfd",
+    "docs/R3_CONSENT_AND_PRIVACY.md": "6b3802c0edd10f8d3fb215019dfa93532bf808877ee2454134c4efe6bbbff7f0",
+    "docs/R3_FINAL_ACTIVATION.md": "fd79d1b431152d4d66698523a3371f90423524e4ed932ca253ad1acbe398604f",
+    "docs/R3_FINAL_VERIFICATION_CHECKLIST.md": "e677e7f4e8e10c053594e6a0adcfe27d8dddf2fa513e8d49dfdef91c6a52a66c",
+    "docs/R3_IMPLEMENTATION_INVENTORY.md": "9c23447b18d69956de645edd2efc8c081dfb691415ed9084b75434bcc32dbf04",
+    "docs/R3_INVESTIGATOR_FINAL_DECISIONS.md": "160c63d0f2f85759d306369b81af54d5565c7220cf77ab5c63ce37080909db58",
+    "docs/R3_PARTICIPANT_EXPORT_INSTRUCTIONS.md": "cc5861c77b286c445f17caf32f0800690f84496974b5e734407d9413dbf00f48",
+    "docs/R3_PARTICIPANT_INFORMATION.md": "9e171304db1b8542b4b4505a522f005ec8626a6070fd4e06952206d6c9f959f9",
+    "docs/R3_PILOT_PROTOCOL.md": "a87e5cb1e064a5c5e244e0b46ca4b1f865654139bcdf542c68ed3d3616f1bf40",
+    "docs/R3_PREREGISTRATION_DRAFT.md": "a50a0a00276c699d8b0698397633a63025d0fb8a1e3055b983c2e6f5698412bd",
+    "docs/R3_RECRUITMENT_MESSAGE.md": "4d753bb69e45d318a1eaefaed81110a2806adf3acd5c1efceca1bbad68dad2c8"
+  },
+  "preserved_entrypoints": {
+    "index.html": "6bcd51e7147e2daa6c9d94eee3b251eeb1282674595b3d784d9ad6be6b11794d",
+    "r3-geometry-reliability-02/index.html": "bfb17a546db9c4a108d8b3efeb0cd003558b6f36ea10f3eac25f94378fd1b708",
+    "r3-ios-delivery-01-41212170385c/index.html": "c3ca3ee16a8cd985d4114f87fa30f0e536fb37e7d4f7894ec1f182ea42215443"
+  },
+  "external_preregistration": "NOT_PERFORMED",
+  "external_registration_timestamp": null,
+  "human_study_authorization": "NOT_AUTHORIZED",
+  "real_device_evidence": "Successful Android/iOS runs owner-reported; no instrumented geometry evidence supplied; no additional geometry campaign required absent a critical reproducible defect"
+}

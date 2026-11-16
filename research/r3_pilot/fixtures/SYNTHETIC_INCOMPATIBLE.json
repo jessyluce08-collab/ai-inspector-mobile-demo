@@ -1,0 +1,1592 @@
+{
+  "schema_version": "R3-RESULT-1",
+  "data_class": "TECHNICAL_VALIDATION_NOT_HUMAN_DATA",
+  "experiment": {
+    "study_id": "AI-INSPECTOR-R3-OFFLINE-HUMAN-BLUR-STUDY",
+    "study_version": "R3-VALIDATION-1",
+    "protocol_version": "R3-PILOT-1",
+    "stimulus_manifest_version": "R3-STIMULI-1",
+    "manifest_sha256": "384a740bf7294494eb91d5b7537ef7a77d7c0b6885b5ae64017742134a65a3cc",
+    "application_build_id": "0000000000000000000000000000000000000000000000000000000000000000",
+    "application_code_sha256": "004c81e93758129f3ae9700c097e27d78d12bb436c70ca1821d0db6272362919",
+    "artifact_checksum_location": "EXTERNAL_RELEASE_MANIFEST",
+    "mode": "PILOT24"
+  },
+  "participant": {
+    "pseudonymous_id": "TEST-SYN0001",
+    "technical_acknowledged": true,
+    "research_consent": false,
+    "consent_version": "R3-TECH-ACK-1",
+    "consent_utc": "2000-01-02T00:00:30Z"
+  },
+  "session": {
+    "session_id": "S-0123456789abcdef",
+    "seed": "0123456789abcdef",
+    "started_utc": "2000-01-02T00:01:00Z",
+    "ended_utc": "2000-01-02T00:10:00Z",
+    "completed_utc": "2000-01-02T00:10:00Z",
+    "status": "COMPLETE"
+  },
+  "device": {
+    "browser_family": "UNKNOWN",
+    "os_family": "UNKNOWN"
+  },
+  "trials": [
+    {
+      "trial_id": "TR-01",
+      "pair_id": "S01-MODERATE",
+      "order_index": 1,
+      "source_id": "S01",
+      "source_group_id": "S01",
+      "variant_a": "S01-L0",
+      "variant_b": "S01-L12",
+      "manifest_reference": "S01-MODERATE",
+      "attempted": true,
+      "completed": true,
+      "response": "A",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:00Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-02",
+      "pair_id": "S04-NONZERO",
+      "order_index": 2,
+      "source_id": "S04",
+      "source_group_id": "S04",
+      "variant_a": "S04-L12",
+      "variant_b": "S04-L06",
+      "manifest_reference": "S04-NONZERO",
+      "attempted": true,
+      "completed": true,
+      "response": "B",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:01Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-03",
+      "pair_id": "S02-SUBTLE",
+      "order_index": 3,
+      "source_id": "S02",
+      "source_group_id": "S02",
+      "variant_a": "S02-L06",
+      "variant_b": "S02-L07",
+      "manifest_reference": "S02-SUBTLE",
+      "attempted": true,
+      "completed": true,
+      "response": "T",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:02Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-04",
+      "pair_id": "S03-MILD",
+      "order_index": 4,
+      "source_id": "S03",
+      "source_group_id": "S03",
+      "variant_a": "S03-L06",
+      "variant_b": "S03-L0",
+      "manifest_reference": "S03-MILD",
+      "attempted": true,
+      "completed": true,
+      "response": "U",
+      "missing_response": false,
+      "abstained": true,
+      "response_utc": "2000-01-02T00:02:03Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-05",
+      "pair_id": "S03-NONZERO",
+      "order_index": 5,
+      "source_id": "S03",
+      "source_group_id": "S03",
+      "variant_a": "S03-L06",
+      "variant_b": "S03-L12",
+      "manifest_reference": "S03-NONZERO",
+      "attempted": true,
+      "completed": true,
+      "response": "A",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:04Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-06",
+      "pair_id": "S02-IDENTICAL",
+      "order_index": 6,
+      "source_id": "S02",
+      "source_group_id": "S02",
+      "variant_a": "S02-L0",
+      "variant_b": "S02-L0",
+      "manifest_reference": "S02-IDENTICAL",
+      "attempted": true,
+      "completed": true,
+      "response": "B",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:05Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-07",
+      "pair_id": "S01-NONZERO",
+      "order_index": 7,
+      "source_id": "S01",
+      "source_group_id": "S01",
+      "variant_a": "S01-L06",
+      "variant_b": "S01-L12",
+      "manifest_reference": "S01-NONZERO",
+      "attempted": true,
+      "completed": true,
+      "response": "T",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:06Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-08",
+      "pair_id": "S02-MILD",
+      "order_index": 8,
+      "source_id": "S02",
+      "source_group_id": "S02",
+      "variant_a": "S02-L0",
+      "variant_b": "S02-L06",
+      "manifest_reference": "S02-MILD",
+      "attempted": true,
+      "completed": true,
+      "response": "U",
+      "missing_response": false,
+      "abstained": true,
+      "response_utc": "2000-01-02T00:02:07Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-09",
+      "pair_id": "S03-IDENTICAL",
+      "order_index": 9,
+      "source_id": "S03",
+      "source_group_id": "S03",
+      "variant_a": "S03-L0",
+      "variant_b": "S03-L0",
+      "manifest_reference": "S03-IDENTICAL",
+      "attempted": true,
+      "completed": true,
+      "response": "A",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:08Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-10",
+      "pair_id": "S03-STRONG",
+      "order_index": 10,
+      "source_id": "S03",
+      "source_group_id": "S03",
+      "variant_a": "S03-L24",
+      "variant_b": "S03-L0",
+      "manifest_reference": "S03-STRONG",
+      "attempted": true,
+      "completed": true,
+      "response": "B",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:09Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-11",
+      "pair_id": "S04-IDENTICAL",
+      "order_index": 11,
+      "source_id": "S04",
+      "source_group_id": "S04",
+      "variant_a": "S04-L0",
+      "variant_b": "S04-L0",
+      "manifest_reference": "S04-IDENTICAL",
+      "attempted": true,
+      "completed": true,
+      "response": "T",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:10Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-12",
+      "pair_id": "S03-MODERATE",
+      "order_index": 12,
+      "source_id": "S03",
+      "source_group_id": "S03",
+      "variant_a": "S03-L0",
+      "variant_b": "S03-L12",
+      "manifest_reference": "S03-MODERATE",
+      "attempted": true,
+      "completed": true,
+      "response": "U",
+      "missing_response": false,
+      "abstained": true,
+      "response_utc": "2000-01-02T00:02:11Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-13",
+      "pair_id": "S02-STRONG",
+      "order_index": 13,
+      "source_id": "S02",
+      "source_group_id": "S02",
+      "variant_a": "S02-L0",
+      "variant_b": "S02-L24",
+      "manifest_reference": "S02-STRONG",
+      "attempted": true,
+      "completed": true,
+      "response": "A",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:12Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-14",
+      "pair_id": "S01-STRONG",
+      "order_index": 14,
+      "source_id": "S01",
+      "source_group_id": "S01",
+      "variant_a": "S01-L24",
+      "variant_b": "S01-L0",
+      "manifest_reference": "S01-STRONG",
+      "attempted": true,
+      "completed": true,
+      "response": "B",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:13Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-15",
+      "pair_id": "S04-SUBTLE",
+      "order_index": 15,
+      "source_id": "S04",
+      "source_group_id": "S04",
+      "variant_a": "S04-L06",
+      "variant_b": "S04-L07",
+      "manifest_reference": "S04-SUBTLE",
+      "attempted": true,
+      "completed": true,
+      "response": "T",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:14Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-16",
+      "pair_id": "S03-SUBTLE",
+      "order_index": 16,
+      "source_id": "S03",
+      "source_group_id": "S03",
+      "variant_a": "S03-L07",
+      "variant_b": "S03-L06",
+      "manifest_reference": "S03-SUBTLE",
+      "attempted": true,
+      "completed": true,
+      "response": "U",
+      "missing_response": false,
+      "abstained": true,
+      "response_utc": "2000-01-02T00:02:15Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-17",
+      "pair_id": "S01-SUBTLE",
+      "order_index": 17,
+      "source_id": "S01",
+      "source_group_id": "S01",
+      "variant_a": "S01-L07",
+      "variant_b": "S01-L06",
+      "manifest_reference": "S01-SUBTLE",
+      "attempted": true,
+      "completed": true,
+      "response": "A",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:16Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-18",
+      "pair_id": "S04-MODERATE",
+      "order_index": 18,
+      "source_id": "S04",
+      "source_group_id": "S04",
+      "variant_a": "S04-L12",
+      "variant_b": "S04-L0",
+      "manifest_reference": "S04-MODERATE",
+      "attempted": true,
+      "completed": true,
+      "response": "B",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:17Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-19",
+      "pair_id": "S02-NONZERO",
+      "order_index": 19,
+      "source_id": "S02",
+      "source_group_id": "S02",
+      "variant_a": "S02-L12",
+      "variant_b": "S02-L06",
+      "manifest_reference": "S02-NONZERO",
+      "attempted": true,
+      "completed": true,
+      "response": "T",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:18Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-20",
+      "pair_id": "S04-STRONG",
+      "order_index": 20,
+      "source_id": "S04",
+      "source_group_id": "S04",
+      "variant_a": "S04-L0",
+      "variant_b": "S04-L24",
+      "manifest_reference": "S04-STRONG",
+      "attempted": true,
+      "completed": true,
+      "response": "U",
+      "missing_response": false,
+      "abstained": true,
+      "response_utc": "2000-01-02T00:02:19Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-21",
+      "pair_id": "S01-IDENTICAL",
+      "order_index": 21,
+      "source_id": "S01",
+      "source_group_id": "S01",
+      "variant_a": "S01-L0",
+      "variant_b": "S01-L0",
+      "manifest_reference": "S01-IDENTICAL",
+      "attempted": true,
+      "completed": true,
+      "response": "A",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:20Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-22",
+      "pair_id": "S04-MILD",
+      "order_index": 22,
+      "source_id": "S04",
+      "source_group_id": "S04",
+      "variant_a": "S04-L0",
+      "variant_b": "S04-L06",
+      "manifest_reference": "S04-MILD",
+      "attempted": true,
+      "completed": true,
+      "response": "B",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:21Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-23",
+      "pair_id": "S01-MILD",
+      "order_index": 23,
+      "source_id": "S01",
+      "source_group_id": "S01",
+      "variant_a": "S01-L06",
+      "variant_b": "S01-L0",
+      "manifest_reference": "S01-MILD",
+      "attempted": true,
+      "completed": true,
+      "response": "T",
+      "missing_response": false,
+      "abstained": false,
+      "response_utc": "2000-01-02T00:02:22Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    },
+    {
+      "trial_id": "TR-24",
+      "pair_id": "S02-MODERATE",
+      "order_index": 24,
+      "source_id": "S02",
+      "source_group_id": "S02",
+      "variant_a": "S02-L12",
+      "variant_b": "S02-L0",
+      "manifest_reference": "S02-MODERATE",
+      "attempted": true,
+      "completed": true,
+      "response": "U",
+      "missing_response": false,
+      "abstained": true,
+      "response_utc": "2000-01-02T00:02:23Z",
+      "elapsed_ms": 1000,
+      "timing_status": "MONOTONIC",
+      "inspection": {
+        "A": true,
+        "B": true
+      },
+      "display_geometry": {
+        "mode": "SEQUENTIAL_FIXED_IMAGE",
+        "source": {
+          "width": 384,
+          "height": 288
+        },
+        "css": {
+          "width": 384,
+          "height": 288
+        },
+        "dpr": 1,
+        "visual_scale": 1,
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "layout_viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "visual_viewport": {
+          "width": 1024,
+          "height": 768,
+          "offsetTop": 0,
+          "offsetLeft": 0
+        },
+        "orientation": "landscape",
+        "estimated_render_pixels": {
+          "width": 384,
+          "height": 288
+        },
+        "sampling": "ESTIMATED_1_TO_1_NOT_VERIFIED",
+        "physical_pixel_pitch": "UNKNOWN",
+        "native_display_verified": false,
+        "flags": [],
+        "support_rule": "R3-WHOLE-IMAGE-HEURISTIC-1",
+        "status": "DISPLAY_GEOMETRY_DOCUMENTED"
+      },
+      "display_warnings": [],
+      "technical_invalidation": [],
+      "visibility_interrupted": false,
+      "geometry_events": []
+    }
+  ],
+  "integrity": {
+    "planned_trial_count": 24,
+    "record_slot_count": 24,
+    "recorded_trial_count": 24,
+    "completed_trial_count": 24,
+    "missing_response_count": 0,
+    "abstention_count": 6,
+    "tie_count": 6,
+    "record_summary_sha256": "bdb4f7d374291467d20824fb84858648cdd35ec0f5d7543c52849c7cf2879cdb",
+    "digest_scope": "JSON compact array of trial_id,variant_a,variant_b,response,completed,abstained; not entire payload or authenticity"
+  },
+  "validation": {
+    "status": "LOCAL_STRUCTURE_CHECKED_TECHNICAL_ONLY",
+    "human_reference_admission": "NOT_ADMITTED",
+    "study_authorization": "NOT_AUTHORIZED"
+  },
+  "export": {
+    "exported_utc": "2000-01-02T00:11:00Z",
+    "attempt": 1
+  }
+}
